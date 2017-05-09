@@ -1,0 +1,115 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="layout.Addpost">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="500dp"
+            android:layout_height="220dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:layout_weight="0.14"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:soundEffectsEnabled="false"
+            android:src="@mipmap/addbtn"
+            app:srcCompat="@mipmap/addbtn" />
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_height="60dp"
+            android:hint="Title"
+            android:background="@drawable/roundcorner"
+            android:layout_marginTop="23dp"
+
+            android:layout_below="@+id/imageButton"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:hint="Description"
+            android:layout_height="80dp"
+            android:background="@drawable/roundcorner"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+            android:text="Post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:textSize="30sp"
+            android:textColor="@color/primary"
+            android:background="@drawable/roundcorner"
+            android:layout_marginTop="80dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:checkedButton="@+id/radioBarter"
+            android:focusable="false"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/editText3"
+            android:layout_marginTop="30dp">
+
+            <RadioButton
+                android:text="Barter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:textSize="20sp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/radioBarter"
+                tools:paddingBottom="10dp"
+                tools:paddingTop="10dp"
+                android:clickable="true" />
+
+            <RadioButton
+                android:text="Rent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/primary_dark"
+                android:textSize="20sp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                tools:paddingBottom="10dp"
+                tools:paddingTop="10dp"
+                android:clickable="true"
+                android:id="@+id/radioRent"
+                android:elevation="7dp" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+</ScrollView>

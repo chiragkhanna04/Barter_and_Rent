@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:scrollbarStyle="outsideOverlay"
+    style="@android:style/Widget.ScrollView"
+    android:fillViewport="true"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:weightSum="1">
+
+
+        <ImageView android:src="@drawable/logodes"
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.05"
+            android:scaleType="centerInside" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Home">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:id="@+id/radGroup"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:checkedButton="@+id/radBarter"
+        android:focusable="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="30dp"
+        android:clickable="true">
+
+        <RadioButton
+            android:text="Barter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_darker"
+            android:textSize="20sp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/radBarter"
+            tools:paddingBottom="10dp"
+            tools:paddingTop="10dp"
+            android:clickable="true"
+            />
+
+        <RadioButton
+            android:text="Rent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/primary_darker"
+            android:textSize="20sp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            tools:paddingBottom="10dp"
+            tools:paddingTop="10dp"
+            android:clickable="true"
+            android:id="@+id/radRent"
+            android:elevation="7dp"
+            />
+
+    </RadioGroup>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/postlist"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radGroup" />
+</RelativeLayout>

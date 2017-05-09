@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.loginp.Selectedpost">
+    <ImageButton
+        android:id="@+id/images1"
+        android:layout_width="500dp"
+        android:layout_height="220dp"
+        android:layout_weight="0.14"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:soundEffectsEnabled="false"
+        android:src="@mipmap/addbtn"
+        app:srcCompat="@mipmap/addbtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/texts2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_weight="0.14"
+        android:background="@color/primary_dark"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:isScrollContainer="true"
+        android:lines="2"
+        android:maxLines="5"
+        android:minLines="2"
+        android:overScrollMode="ifContentScrolls"
+        android:singleLine="false"
+        android:textSize="18sp" />
+
+
+
+    <TextView
+        android:id="@+id/texts1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.14"
+        android:background="@color/primary_dark"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="19dp"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        tools:text="Title"
+        android:layout_below="@+id/images1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/texts1"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CONFIRM"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imageButton6" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
